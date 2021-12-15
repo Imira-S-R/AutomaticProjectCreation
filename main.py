@@ -29,10 +29,14 @@ if fileExtension == '.py':
     print('[+] Writing Information To The File')
     file.write(f'#Project Name: {projectName}\n')
     file.write(f'#Author: {author}\n')
-elif fileExtension == '.dart':
+elif fileExtension == '.dart' or fileExtension == '.java' or fileExtension == '.kt' or fileExtension == '.js':
     print('[+] Writing Information To The File')
     file.write(f'//Project Name: {projectName}\n')
     file.write(f'//Author: {author}\n')
+elif fileExtension == '.html':
+    print('[+] Writing Information To The File')
+    file.write(f'<!--Project Name: {projectName}-->\n')
+    file.write(f'<!--Author: {author}-->\n')
 else:
     print('[+] Writing Information To The File')
     file.write(f'Project Name: {projectName}\n')
